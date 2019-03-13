@@ -2145,6 +2145,9 @@ static void razer_kbd_disconnect(struct hid_device *hdev)
             device_remove_file(&hdev->dev, &dev_attr_matrix_effect_reactive);        // Reactive effect
             device_remove_file(&hdev->dev, &dev_attr_matrix_effect_breath);          // Breathing effect
             device_remove_file(&hdev->dev, &dev_attr_matrix_effect_static);          // Static effect
+            device_remove_file(&hdev->dev, &dev_attr_matrix_effect_wave);            // Wave effect
+            device_remove_file(&hdev->dev, &dev_attr_matrix_effect_starlight);       // Starlight effect
+            device_remove_file(&hdev->dev, &dev_attr_matrix_effect_reactive);        // Reactive effect
             break;
 
         case USB_DEVICE_ID_RAZER_BLADE_2018_MERCURY:
