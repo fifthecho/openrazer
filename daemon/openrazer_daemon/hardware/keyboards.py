@@ -938,9 +938,13 @@ class RazerBlade2019Adv(_RippleKeyboard):
     USB_PID = 0x023a
     HAS_MATRIX = True
     MATRIX_DIMS = [6, 16]
-    METHODS = ['get_device_type_keyboard', 'set_wave_effect', 'set_static_effect', 'set_spectrum_effect',
-               'set_reactive_effect', 'set_none_effect', 'set_breath_random_effect', 'set_breath_single_effect',
-               'set_starlight_random_effect', 'set_ripple_effect', 'set_ripple_effect_random_colour']
+    METHODS = ['get_device_type_keyboard', 'set_wave_effect', 'set_static_effect',
+               'set_spectrum_effect', 'set_reactive_effect', 'set_none_effect',
+               'set_breath_random_effect', 'set_breath_single_effect',
+               'set_starlight_random_effect', 'set_ripple_effect',
+               'set_ripple_effect_random_colour', 'set_starlight_single_effect',
+               'set_starlight_dual_effect'
+               ]
 
     # Could not find png variants; tested and working in Polychromatic and RazerGenie
     RAZER_URLS = {
